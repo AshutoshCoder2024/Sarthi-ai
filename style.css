@@ -184,7 +184,7 @@ body.chats-active .container :where(.app-header, .suggestions) {
 }
 
 .chats-container .message .message-text {
-    padding: 3px 16px;
+    padding: 3px 1px;
     word-wrap: break-word;
     white-space: pre-line;
 }
@@ -360,9 +360,9 @@ body.bot-responding .prompt-form #stop-response-btn {
     .suggestions .suggestions-list .text { font-size: 0.95rem; }
     .suggestions .suggestions-list span { height: 40px; width: 40px; font-size: 1rem; }
     .chats-container { gap: 15px; margin: 50px auto; }
-    .chats-container .bot-message { margin: 4px auto; }
-    .chats-container .bot-message .avatar { height: 38px; width: 38px; padding: 5px; }
-    .chats-container .user-message .message-text { max-width: 85%; }
+    .chats-container .bot-message { margin: 4px auto ;  }
+    .chats-container .bot-message .avatar { height: 38px; width: 38px; padding: 5px; display: none; }
+    .chats-container .user-message .message-text { max-width: 95%; }
     .chats-container .user-message .img-attachment { width: 70%; }
     .prompt-container { padding: 12px 0; }
     .prompt-container :where(.prompt-wrapper, .prompt-form, .prompt-actions) { gap: 8px; height: 50px; }
@@ -378,7 +378,7 @@ body.bot-responding .prompt-form #stop-response-btn {
     .app-header .heading { font-size: 1.8rem; }
     .app-header .sub-heading { font-size: 1.5rem; }
     .suggestions .suggestions-list { width: 160px; min-height: 100px; }
-    .chats-container .user-message .message-text { max-width: 90%; }
+    .chats-container .user-message .message-text { max-width: 100%; }
     .chats-container .user-message .img-attachment { width: 85%; }
     .prompt-wrapper button { width: 45px; height: 45px; font-size: 1.2rem; }
     .prompt-form .prompt-actions { gap: 3px; margin-right: 5px; }
