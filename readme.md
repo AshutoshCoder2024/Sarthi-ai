@@ -140,6 +140,3 @@ The chatbot is now fully optimized for mobile devices with:
 - **Automatic Saving**: Theme preference is remembered
 - **Smooth Transitions**: Beautiful theme switching animations
 
----
-
-**Built with ❤️ for the XTS Tech Club community**
