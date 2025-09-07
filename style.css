@@ -371,6 +371,9 @@ body.bot-responding .prompt-form #stop-response-btn {
     .prompt-form .prompt-input { padding-left: 15px; font-size: 0.95rem; }
     .prompt-wrapper.hide-controls :where(#theme-toggle-btn, #delete-chats-btn) { display: none; }
     .prompt-container .disclaimer-text { font-size: 0.8rem; padding: 12px 15px 0; }
+    .message-text{
+        font-size: 15px;
+    }
 }
 
 /* Extra small devices */
