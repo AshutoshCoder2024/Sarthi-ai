@@ -1,4 +1,4 @@
-# Jigyasa AI Chatbot
+# Sarthi AI Chatbot
 
 A modern, responsive AI chatbot built with HTML, CSS, and JavaScript that provides an intuitive chat interface with advanced features.
 
