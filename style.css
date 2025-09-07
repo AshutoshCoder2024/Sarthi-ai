@@ -148,7 +148,7 @@ body.chats-active .container :where(.app-header, .suggestions) {
     margin: 100px auto;
     width: 100%;
     max-width: 980px;
-    padding: 0 20px;
+    padding: 0px 4px;
 }
 
 .chats-container .message {
@@ -372,7 +372,7 @@ body.bot-responding .prompt-form #stop-response-btn {
     .prompt-wrapper.hide-controls :where(#theme-toggle-btn, #delete-chats-btn) { display: none; }
     .prompt-container .disclaimer-text { font-size: 0.8rem; padding: 12px 15px 0; }
     .message-text{
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
