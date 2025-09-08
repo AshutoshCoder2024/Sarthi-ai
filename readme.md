@@ -60,9 +60,6 @@ const GEMINI_API_KEY = "your_api_key_here";
 
 Run locally by opening index.html in your browser, or start a server:
 
-# If Python is installed
-python -m http.server
-# Visit http://localhost:8000 in your browser
 
 🎯 Usage Guide
 
