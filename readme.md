@@ -12,6 +12,7 @@ Whether you’re building a personal AI assistant, customer support bot, or a fu
 
 📂 File Sharing → Upload and preview images, PDFs, and text files directly inside chat
 
+
 🌓 Theme Switcher → Dark/Light mode with automatic preference saving
 
 📱 Responsive Design → Optimized for mobile, tablet, and desktop (mobile-first)
