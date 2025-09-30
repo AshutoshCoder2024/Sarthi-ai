@@ -1,145 +1,133 @@
-# Jigyasa AI Chatbot
+🚀 Sarthi AI Chatbot
+📖 Introduction
 
-A modern, responsive AI chatbot built with HTML, CSS, and JavaScript that provides an intuitive chat interface with advanced features.
+Meet Sarthi AI — a modern, responsive chatbot interface built with HTML, CSS, JavaScript, and Google Gemini API.
+It’s lightweight, fast, and feature-rich — designed to deliver a seamless AI-powered chat experience.
 
-## ✨ Features
+Whether you’re building a personal AI assistant, customer support bot, or a fun AI project, Sarthi AI gives you the perfect foundation to start and expand.
 
-### 🎨 **Enhanced UI/UX**
-- **Modern Design**: Clean, professional interface with smooth animations
-- **Responsive Layout**: Fully responsive design that works on all devices
-- **Theme Support**: Light and dark theme with automatic preference saving
-- **Smooth Animations**: CSS transitions and animations for better user experience
-- **Professional Typography**: Improved font weights and spacing
+✨ Key Features
 
-### 📱 **Fully Responsive Design**
-- **Mobile-First Approach**: Optimized for mobile devices
-- **Tablet Support**: Responsive grid layouts for medium screens
-- **Desktop Experience**: Enhanced sidebar and navigation for larger screens
-- **Touch-Friendly**: Optimized touch targets and interactions
+💬 Smart Chat System → Persistent chat history, typing effect, real-time updates, and auto-generated chat titles
 
-### 💬 **Advanced Chat Features**
-- **Chat History**: Persistent chat storage with local storage
-- **Smart Chat Titles**: Automatic generation of meaningful chat titles
-- **Chat Management**: Create, switch between, and delete chats
-- **File Attachments**: Support for images, PDFs, and text files
-- **Real-time Typing**: Smooth typing effect for bot responses
+📂 File Sharing → Upload and preview images, PDFs, and text files directly inside chat
 
-### 🔧 **Technical Improvements**
-- **Better State Management**: Improved chat state handling
-- **Enhanced Sidebar**: Collapsible sidebar with smooth animations
-- **Accessibility**: ARIA labels and focus management
-- **Performance**: Optimized rendering and smooth scrolling
-- **Cross-browser**: Compatible with modern browsers
 
-## 🚀 **New Features Added**
+🌓 Theme Switcher → Dark/Light mode with automatic preference saving
 
-### 📋 **Chat Title Display**
-- Shows the main heading of each chat at the top
-- Automatically generates meaningful titles from user messages
-- Updates in real-time as conversations progress
-- Beautiful visual design with accent colors
+📱 Responsive Design → Optimized for mobile, tablet, and desktop (mobile-first)
 
-### 🎯 **Improved Responsiveness**
-- **Mobile (≤768px)**: Full-width sidebar, optimized touch targets
-- **Tablet (≤1200px)**: Adaptive grid layouts, balanced spacing
-- **Desktop (>1200px)**: Enhanced sidebar, optimal content width
-- **Small screens (≤480px)**: Single-column layouts, compact design
+🔄 Multi-Chat Management → Create, switch, rename, and delete conversations easily
 
-### 🎨 **Enhanced Visual Design**
-- **CSS Variables**: Consistent color scheme and spacing
-- **Modern Shadows**: Subtle shadows and depth effects
-- **Gradient Accents**: Beautiful gradient text and borders
-- **Smooth Transitions**: 300ms cubic-bezier transitions
-- **Better Contrast**: Improved readability across themes
+🎨 Modern UI/UX → Gradient accents, elegant typography, smooth transitions, and accessibility support
 
-## 📱 **Device Support**
+🤖 Powered by Google Gemini API → Uses Gemini AI models for natural, intelligent, and context-aware conversations
 
-| Device Type | Screen Size | Features |
-|-------------|-------------|----------|
-| **Mobile** | ≤768px | Full-width sidebar, touch-optimized |
-| **Tablet** | 768px - 1200px | Adaptive grids, balanced layout |
-| **Desktop** | >1200px | Enhanced sidebar, optimal spacing |
-| **Small Mobile** | ≤480px | Single-column, compact design |
+🌐 Live Demo
 
-## 🛠 **Technical Details**
+👉 Try it out here(https://sarthi-ai.netlify.app/)
 
-### **CSS Improvements**
-- CSS Grid for responsive layouts
-- CSS Custom Properties (variables)
-- Modern CSS features (clamp, backdrop-filter)
-- Improved animations and transitions
-- Better accessibility and focus states
+Screenshots
+<img width="1920" height="1200" alt="Screenshot 2025-09-08 144034" src="https://github.com/user-attachments/assets/9161fa8f-7b42-4525-99a3-5a078f045191" />
 
-### **JavaScript Enhancements**
-- Improved chat management system
-- Better error handling and user feedback
-- Enhanced file upload functionality
-- Optimized state management
-- Smooth scrolling and animations
 
-### **HTML Structure**
-- Semantic HTML elements
-- ARIA labels for accessibility
-- Better form structure
-- Improved button labeling
 
-## 🎯 **Usage**
 
-1. **Start a Chat**: Click the "+" button or type a message
-2. **Chat History**: Use the sidebar to switch between chats
-3. **File Uploads**: Attach images, PDFs, or text files
-4. **Theme Toggle**: Switch between light and dark themes
-5. **Responsive Design**: Works seamlessly on all device sizes
+🛠 Tech Stack
 
-## 🔧 **Browser Support**
+HTML5 → Semantic structure + ARIA accessibility
+CSS3 → Grid/Flex layouts, variables, gradients, animations
+JavaScript (Vanilla) → Chat state management, file handling, typing effect, UI animations
+Google Gemini API → AI-powered responses using Gemini’s LLMs
+Local Storage → Persistent history + saved theme preferences
 
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
 
-## 📁 **File Structure**
+⚡ Getting Started
+✅ Requirements
+A modern browser: Chrome, Firefox, Safari, or Edge
+Internet connection (for Gemini API responses)
+Google API key for Gemini AI
 
-```
-├── index.html          # Main HTML structure
-├── style.css           # Enhanced responsive CSS
-├── ai.js              # Improved JavaScript functionality
-├── gemini-chat-logo.svg # Chatbot logo
-└── readme.md          # This documentation
-```
+💻 Setup
+Clone the repository:
 
-## 🌟 **Key Improvements Made**
+git clone https://github.com/AshutoshCoder2024/sarthi-ai.git
+cd sarthi-ai
 
-1. **Responsive Design**: Mobile-first approach with breakpoints
-2. **Chat Titles**: Automatic display of chat headings
-3. **Modern UI**: Enhanced visual design and animations
-4. **Better UX**: Improved interactions and feedback
-5. **Accessibility**: ARIA labels and focus management
-6. **Performance**: Optimized rendering and smooth animations
+Add your Gemini API key in ai.js:
 
-## 🚀 **Getting Started**
+const GEMINI_API_KEY = "your_api_key_here";
 
-1. Clone or download the project
-2. Open `index.html` in a modern web browser
-3. Start chatting with the AI assistant
-4. Test responsiveness on different devices
 
-## 📱 **Mobile Experience**
+Run locally by opening index.html in your browser, or start a server:
 
-The chatbot is now fully optimized for mobile devices with:
-- Touch-friendly interface
-- Responsive sidebar
-- Optimized button sizes
-- Mobile-first design approach
-- Smooth mobile animations
 
-## 🎨 **Theme System**
+🎯 Usage Guide
 
-- **Dark Theme**: Default modern dark interface
-- **Light Theme**: Clean light interface option
-- **Automatic Saving**: Theme preference is remembered
-- **Smooth Transitions**: Beautiful theme switching animations
+Start a Chat → Type your message and press Enter
 
----
+Switch/Manage Chats → Sidebar to create, rename, or delete conversations
 
-**Built with ❤️ for the XTS Tech Club community**
+Upload Files → Use the 📎 icon to upload images, PDFs, or text files
+
+Toggle Theme → Instantly switch between dark/light themes
+
+AI Conversations → Powered by Google Gemini API for natural replies
+
+Cross-Device → Works seamlessly on mobile, tablet, and desktop
+
+📂 Project Structure
+sarthi-ai/
+├── index.html             # Main structure
+├── style.css              # CSS styling & responsive design
+├── ai.js                  # Chat logic, Gemini API integration, state management
+├── gemini-chat-logo.svg   # Chatbot logo/icon
+└── readme.md              # Documentation
+
+📱 Responsive Design
+
+≤480px (Mobile) → Compact single-column layout
+
+768px–1200px (Tablet) → Balanced grid layout
+
+>1200px (Desktop) → Sidebar navigation + expanded UI
+
+Touch-Friendly → Optimized controls for mobile users
+
+🔮 Roadmap / Future Enhancements
+
+🎤 Voice Input → Talk instead of typing
+📜 Persistent Cloud History → Save chats beyond local sessions
+📤 Export Chats → Download conversations as PDF/TXT
+🎨 Custom Preferences → Fonts, themes, and colors
+🖼 AI Image Generation → Use Gemini for visual responses
+
+🤝 Contributing
+
+We ❤️ open-source contributions!
+
+Fork this repo
+
+Create a feature branch → git checkout -b feature/amazing-feature
+
+Commit changes → git commit -m "Added amazing feature"
+
+Push → git push origin feature/amazing-feature
+
+Open a Pull Request 🚀
+
+📜 License
+
+Licensed under the MIT License – see the LICENSE file for details.
+
+🙏 Acknowledgments
+
+Google Gemini API → Powering intelligent, context-aware conversations
+
+Google Fonts → Poppins & Roboto for modern typography
+
+Material Symbols → Clean and consistent icons
+
+Modern Web Standards → Responsive and accessible design
+
+✨ Crafted with Gemini AI + Code by [AshutoshCoder2024] 💻🚀
