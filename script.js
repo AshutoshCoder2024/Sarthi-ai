@@ -2,7 +2,7 @@
 // Global constants and DOM elements
 const API_KEY = "AIzaSyAVAY7_RdD2gxk-q4_JR9yIIWuuAv0P9Wc";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
-const THEME_KEY = "themeColor";
+// const THEME_KEY = "themeColor"; // Theme toggle disabled
 
 const promptForm = document.querySelector('.prompt-form');
 const promptInput = promptForm.querySelector('.prompt-input');
@@ -15,7 +15,7 @@ const fileUploadWrapper = promptForm.querySelector(".file-upload-wrapper");
 let isUserScrolling = false;
 let lastScrollTop = 0;
 let scrollTimeout;
-const themeToggle = document.querySelector("#theme-toggle-btn");
+// const themeToggle = document.querySelector("#theme-toggle-btn"); // Theme toggle disabled
 const stopResponseBtn = document.querySelector("#stop-response-btn");
 const deleteChatsBtn = document.querySelector("#delete-chats-btn");
 const addFileBtn = promptForm.querySelector("#add-file-btn");
@@ -234,14 +234,14 @@ container.addEventListener('scroll', () => {
     }, 150);
 });
 
-// Theme toggle logic
-themeToggle.addEventListener("click", () => {
-    const isLightTheme = document.body.classList.toggle("light-theme");
-    localStorage.setItem(THEME_KEY, isLightTheme ? "light-mode" : "dark_mode");
-    themeToggle.textContent = isLightTheme ? "dark_mode" : "light_mode";
-});
+// Theme toggle logic (disabled)
+// themeToggle.addEventListener("click", () => {
+//     const isLightTheme = document.body.classList.toggle("light-theme");
+//     localStorage.setItem(THEME_KEY, isLightTheme ? "light-mode" : "dark_mode");
+//     themeToggle.textContent = isLightTheme ? "dark_mode" : "light_mode";
+// });
 
-// Set initial theme on page load
-const isLightTheme = localStorage.getItem(THEME_KEY) === "light-mode";
-document.body.classList.toggle("light-theme", isLightTheme);
-themeToggle.textContent = isLightTheme ? "dark_mode" : "light_mode";
+// // Set initial theme on page load (disabled)
+// const isLightTheme = localStorage.getItem(THEME_KEY) === "light-mode";
+// document.body.classList.toggle("light-theme", isLightTheme);
+// themeToggle.textContent = isLightTheme ? "dark_mode" : "light_mode";
