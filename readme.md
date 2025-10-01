@@ -23,7 +23,7 @@ Whether you’re building a personal AI assistant, customer support bot, or a fu
 👉 Try it out here(https://sarthi-ai.netlify.app/)
 
 Screenshots
-<img width="1920" height="1200" alt="Screenshot 2025-09-08 144034" src="https://github.com/user-attachments/assets/9161fa8f-7b42-4525-99a3-5a078f045191" />
+<img width="1663" height="944" alt="Screenshot 2025-10-01 114235" src="https://github.com/user-attachments/assets/03d83006-c979-46ce-b755-a544654f6d30" />
 
 
 
