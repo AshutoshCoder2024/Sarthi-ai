@@ -8,8 +8,6 @@ const promptForm = document.querySelector('.prompt-form');
 const promptInput = promptForm.querySelector('.prompt-input');
 const chatsContainer = document.querySelector('.chats-container');
 const container = document.querySelector('.container');
-const fileInput = promptForm.querySelector('#file-input');
-const fileUploadWrapper = promptForm.querySelector(".file-upload-wrapper");
 
 // Scroll control variables
 let isUserScrolling = false;
@@ -18,12 +16,10 @@ let scrollTimeout;
 // const themeToggle = document.querySelector("#theme-toggle-btn"); // Theme toggle disabled
 const stopResponseBtn = document.querySelector("#stop-response-btn");
 const deleteChatsBtn = document.querySelector("#delete-chats-btn");
-const addFileBtn = promptForm.querySelector("#add-file-btn");
-const cancelFileBtn = document.querySelector("#cancel-file-btn");
 
 // Global state variables
 let typingInterval, controller;
-let userData = { message: "", file: {} };
+let userData = { message: "" };
 const chatHistory = [];
 
 
@@ -72,13 +68,7 @@ const typingEffect = (text, textElement, botMsgDiv) => {
 
 // Prepares and returns the parts of the message to be sent to the API.
 const prepareMessageParts = () => {
-    const parts = [{ text: userData.message }];
-    if (userData.file.data) {
-        // Exclude UI-specific properties from the file data sent to the API
-        const { fileName, isImage, ...inlineData } = userData.file;
-        parts.push({ inline_data: inlineData });
-    }
-    return parts;
+    return [{ text: userData.message }];
 };
 
 
@@ -118,7 +108,7 @@ const generateResponse = async (botMsgDiv) => {
         document.body.classList.remove("bot-responding");
         scrollToBottom();
     } finally {
-        userData.file = {};
+        // Cleanup completed
     }
 }
 
@@ -131,12 +121,8 @@ const handleFormSubmit = (e) => {
     userData.message = userMessage;
     promptInput.value = "";
     document.body.classList.add("chats-active", "bot-responding");
-    fileUploadWrapper.classList.remove("file-attached", "img-attached", "active");
 
-    const userMsgHTML = `
-        <p class="message-text"></p>
-        ${userData.file.data ? (userData.file.isImage ? `<img src="data:${userData.file.mime_type};base64,${userData.file.data}" class="img-attachment" />` : `<p class="file-attachment"><span class="material-symbols-rounded">description</span>${userData.file.fileName}</p>`) : ""}
-    `;
+    const userMsgHTML = `<p class="message-text"></p>`;
 
     const userMsgDiv = createMsgElement(userMsgHTML, "user-message");
     userMsgDiv.querySelector(".message-text").textContent = userMessage;
@@ -157,33 +143,10 @@ const handleFormSubmit = (e) => {
 // Main form submission listener
 promptForm.addEventListener("submit", handleFormSubmit);
 
-// File handling listeners
-addFileBtn.addEventListener("click", () => fileInput.click());
-cancelFileBtn.addEventListener("click", () => {
-    userData.file = {};
-    fileUploadWrapper.classList.remove("active", "img-attached", "file-attached");
-});
-
-fileInput.addEventListener("change", () => {
-    const file = fileInput.files[0];
-    if (!file) return;
-
-    const isImage = file.type.startsWith("image/");
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-
-    reader.onload = (e) => {
-        const base64String = e.target.result.split(",")[1];
-        fileInput.value = "";
-        fileUploadWrapper.querySelector(".file-preview").src = e.target.result;
-        fileUploadWrapper.classList.add("active", isImage ? "img-attached" : "file-attached");
-        userData.file = { fileName: file.name, data: base64String, mime_type: file.type, isImage };
-    }
-});
+// File handling listeners removed
 
 // Response control listeners
 stopResponseBtn.addEventListener("click", () => {
-    userData.file = {};
     controller?.abort();
     clearInterval(typingInterval);
     const loadingMessage = chatsContainer.querySelector(".bot-message.loading");
@@ -208,7 +171,7 @@ document.querySelectorAll(".suggestions-list").forEach((suggestion) => {
 
 document.addEventListener("click", ({ target }) => {
     const wrapper = document.querySelector(".prompt-wrapper");
-    const shouldHide = target.classList.contains("prompt-input") || (wrapper.classList.contains("hide-controls") && (target.id === addFileBtn.id || target.id === stopResponseBtn.id));
+    const shouldHide = target.classList.contains("prompt-input") || (wrapper.classList.contains("hide-controls") && target.id === stopResponseBtn.id);
     wrapper.classList.toggle("hide-controls", shouldHide);
 });
 
