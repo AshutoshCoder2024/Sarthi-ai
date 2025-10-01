@@ -10,11 +10,6 @@ Whether you’re building a personal AI assistant, customer support bot, or a fu
 
 💬 Smart Chat System → Persistent chat history, typing effect, real-time updates, and auto-generated chat titles
 
-📂 File Sharing → Upload and preview images, PDFs, and text files directly inside chat
-
-
-🌓 Theme Switcher → Dark/Light mode with automatic preference saving
-
 📱 Responsive Design → Optimized for mobile, tablet, and desktop (mobile-first)
 
 🔄 Multi-Chat Management → Create, switch, rename, and delete conversations easily
@@ -68,9 +63,6 @@ Start a Chat → Type your message and press Enter
 
 Switch/Manage Chats → Sidebar to create, rename, or delete conversations
 
-Upload Files → Use the 📎 icon to upload images, PDFs, or text files
-
-Toggle Theme → Instantly switch between dark/light themes
 
 AI Conversations → Powered by Google Gemini API for natural replies
 
