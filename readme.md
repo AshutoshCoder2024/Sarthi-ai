@@ -10,11 +10,6 @@ Whether you’re building a personal AI assistant, customer support bot, or a fu
 
 💬 Smart Chat System → Persistent chat history, typing effect, real-time updates, and auto-generated chat titles
 
-📂 File Sharing → Upload and preview images, PDFs, and text files directly inside chat
-
-
-🌓 Theme Switcher → Dark/Light mode with automatic preference saving
-
 📱 Responsive Design → Optimized for mobile, tablet, and desktop (mobile-first)
 
 🔄 Multi-Chat Management → Create, switch, rename, and delete conversations easily
@@ -28,7 +23,7 @@ Whether you’re building a personal AI assistant, customer support bot, or a fu
 👉 Try it out here(https://sarthi-ai.netlify.app/)
 
 Screenshots
-<img width="1920" height="1200" alt="Screenshot 2025-09-08 144034" src="https://github.com/user-attachments/assets/9161fa8f-7b42-4525-99a3-5a078f045191" />
+<img width="1663" height="944" alt="Screenshot 2025-10-01 114235" src="https://github.com/user-attachments/assets/03d83006-c979-46ce-b755-a544654f6d30" />
 
 
 
@@ -68,9 +63,6 @@ Start a Chat → Type your message and press Enter
 
 Switch/Manage Chats → Sidebar to create, rename, or delete conversations
 
-Upload Files → Use the 📎 icon to upload images, PDFs, or text files
-
-Toggle Theme → Instantly switch between dark/light themes
 
 AI Conversations → Powered by Google Gemini API for natural replies
 
